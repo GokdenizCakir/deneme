@@ -1,9 +1,16 @@
 export interface Country {
   code: string;
   name: string;
+  emoji: string;
   continent?: Continent;
+  languages: Language[];
   capital?: string;
   currency: string;
+}
+
+export interface Language {
+  code: string;
+  name: string;
 }
 
 export interface Continent {
