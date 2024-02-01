@@ -47,10 +47,11 @@ export interface CurrencyInterface {
 export interface Details {
   code: string;
   name: string;
-  currency: string;
-  continent: ContinentInDetails;
-  languages: ContinentInDetails[];
+  emoji: string;
+  continent: Continent;
+  languages: Language[];
   capital: string;
+  currency: string;
 }
 
 export interface ContinentInDetails {

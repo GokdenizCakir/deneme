@@ -48,13 +48,16 @@ const GET_COUNTRIES_WITH_DETAILS = gql`
       code
       name
       currency
-      continent {
-        name
-      }
-      languages {
-        name
-      }
+      emoji
       capital
+      languages {
+        code
+        name
+      }
+      continent {
+        code
+        name
+      }
     }
   }
 `;
